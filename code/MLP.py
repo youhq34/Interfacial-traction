@@ -42,7 +42,7 @@ test_sample = 2
 for i in range(8):
     #data = pd.read_excel('../data/TSR_data/case'+str(i)+'.')
     #data = np.array(data)
-    data = np.loadtxt('./data_sample_'+str(i)+'.txt')
+    data = np.loadtxt('./data/data_sample_'+str(i)+'.txt')
     data = torch.from_numpy(data).type(torch.float)
 
     data = data[1:len(data)-1]
